@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-----------------------------------SET UP---------------------------------------------------->
+    <title>Omar Ouldali</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/x-icon" href="../static/media/icons/iconRound.svg"> -->
+    <link rel="icon" type="image/x-icon" href="../static/media/icons/favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="../static/media/icons/iconRound.svg"> -->
+    <!-----------------------------------FONTS----------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="../static/fonts/proximanova.otf" rel="stylesheet">
+    <!--------------------------------STYLESHEETS-------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <!---------------------------------LIBRARIES--------------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <!-----------------------------GOOGLE TAG (GTAG.JS)-------------------------------------------->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BY6W0SXE8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6BY6W0SXE8');
+    </script>
+  </head>
+  <body>
+     <!------------------------------------LOADER------------------------------------------------------>
+    <div id="loading"> 
+      <div class="loader"> </div>
+    </div>
+    <!--------------------------------CONTENT WRAPPER-------------------------------------------------->
+    <div id="blackscreen"> </div>
+    <div id="wrapper" style="z-index: 0;">
+      <!-----------------------------------LOGO-------------------------------------------------------->
+      <svg
+        viewBox="0 0 32 32"
+        version="1.1"
+        id="logo"
+        sodipodi:docname="file_type_stata_icon_130148 (1).svg"
+        inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:svg="http://www.w3.org/2000/svg"> 
+        <defs
+          id="defs144">
+          <filter
+            id="c"
+            width="1"
+            height="1"
+            x="0"
+            y="0"
+            style="color-interpolation-filters:sRGB">
+            <feComposite
+              in="BackgroundImage"
+              in2="SourceGraphic"
+              operator="arithmetic"
+              result="composite1"
+              id="feComposite132" />
+          </filter>
+          <filter
+            id="a"
+            width="1.434176"
+            height="1.434176"
+            x="-0.21708802"
+            y="-0.21708801"
+            style="color-interpolation-filters:sRGB">
+            <feGaussianBlur
+              stdDeviation=".54451453"
+              id="feGaussianBlur135" />
+          </filter>
+          <filter
+            id="b"
+            width="1.434176"
+            height="1.434176"
+            x="-0.21708802"
+            y="-0.21708801"
+            style="color-interpolation-filters:sRGB">
+            <feGaussianBlur
+              stdDeviation=".54451453"
+              id="feGaussianBlur138" />
+          </filter>
+          <filter
+            id="d"
+            width="1.2616747"
+            height="1.3019534"
+            x="-0.13083734"
+            y="-0.15097669"
+            style="color-interpolation-filters:sRGB">
+            <feGaussianBlur
+              stdDeviation=".48753056"
+              id="feGaussianBlur141" />
+          </filter>
+          <filter
+            inkscape:collect="always"
+            style="color-interpolation-filters:sRGB"
+            id="filter4105"
+            x="-0.072821822"
+            y="-0.091466578"
+            width="1.1456436"
+            height="1.1472105">
+            <feGaussianBlur
+              inkscape:collect="always"
+              stdDeviation="0.087589289"
+              id="feGaussianBlur4107" />
+          </filter>
+        </defs>
+        <path
+          id="circle146"
+          style="stroke-width:0.5;stroke-opacity:0.0207254"
+          d="m 11,16 a 4.9999995,4.9999995 0 0 1 -5,5 4.9999995,4.9999995 0 0 1 -5,-5 4.9999995,4.9999995 0 0 1 5,-5 4.9999995,4.9999995 0 0 1 5,5 z" />
+        <path
+          id="circle148"
+          style="opacity:0.257778;fill:none;stroke:#000000;stroke-width:1.72809;filter:url(#a)"
+          transform="matrix(0.84887562,0,0,0.85323718,0.881154,2.5143491)"
+          d="m 10.989192,16.225269 a 4.9999995,4.9999995 0 0 1 -4.999999,5 4.9999995,4.9999995 0 0 1 -4.99999956,-5 4.9999995,4.9999995 0 0 1 4.99999956,-4.999999 4.9999995,4.9999995 0 0 1 4.999999,4.999999 z" />
+        <path
+          id="circle150"
+          style="opacity:0.257778;fill:none;stroke:#000000;stroke-width:1.72809;filter:url(#b)"
+          transform="matrix(0.84887562,0,0,0.85323718,11.406045,2.5145365)"
+          d="m 10.989192,16.225269 a 4.9999995,4.9999995 0 0 1 -4.999999,5 4.9999995,4.9999995 0 0 1 -4.99999956,-5 4.9999995,4.9999995 0 0 1 4.99999956,-4.999999 4.9999995,4.9999995 0 0 1 4.999999,4.999999 z" />
+        <path
+          id="ellipse152"
+          style="stroke-width:0.5"
+          d="m 22.266479,16.066643 a 5,5.0000029 0 0 1 -5,5.000003 5,5.0000029 0 0 1 -5,-5.000003 5,5.0000029 0 0 1 5,-5.000003 5,5.0000029 0 0 1 5,5.000003 z" />
+        <path
+          id="circle146-5"
+          style="stroke:#ffffff;stroke-width:0.5"
+          d="m 10.833374,15.907873 a 4.9999995,4.9999995 0 0 1 -5,5 4.9999995,4.9999995 0 0 1 -4.999999,-5 4.9999995,4.9999995 0 0 1 4.999999,-4.999999 4.9999995,4.9999995 0 0 1 5,4.999999 z" />
+        <path
+          id="ellipse152-7"
+          style="stroke:#ffffff;stroke-width:0.5"
+          d="m 22.099854,15.974516 a 5,5.0000029 0 0 1 -5,5.000003 5,5.0000029 0 0 1 -5,-5.000003 5,5.0000029 0 0 1 5,-5.000003 5,5.0000029 0 0 1 5,5.000003 z" />
+        <path
+          id="triangle-1"
+          style="opacity:1;fill:#12121265;stroke:#fefefe;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+          inkscape:transform-center-y="-1.3762219"
+          d="m 26.985938,12.222656 -2.13086,4.126953 -0.75,1.455079 h 5.761719 l -0.75,-1.455079 z m -3.507813,6.794922 -0.753906,1.460937 h 4.261719 4.259765 l -0.753906,-1.460937 z" />
+        <path
+          id="path1204-5"
+          style="opacity:0.0539499;fill:none;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4105)"
+          inkscape:transform-center-y="-1.5824766"
+          d="m 58.185282,12.356616 -2.13086,4.126953 -0.75,1.455078 h 5.761719 l -0.75,-1.455078 z m -3.507813,6.794922 -0.753906,1.460937 h 4.261719 4.259765 l -0.753906,-1.460937 z"
+          transform="matrix(1.1498707,0,0,1.1498707,-40.732396,-2.6458512)"
+          inkscape:transform-center-x="-2.5286243e-06" />
+      </svg>
+      <!----------------------------------CANVAS------------------------------------------------------->
+      <div id="home"></div>
+      <div id="p5" style="width:100vw; height:100vh"></div>
+      <!------------------------------------UI--------------------------------------------------------->
+      <section>
+        <div class="image-container ui">
+          <div id="zoomer">
+            <img id="profile" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+            <video autoplay="autoplay" playsinline muted loop preload="metadata" onmouseover="this.pause()" onmouseout="this.play()">
+              <source src="https://storage.googleapis.com/bucket-portfolio/media/animated/legible.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <!--------------------------------SLIDER------------------------------------------------------->
+        <div class="slidecontainer">
+          <input type="range" min="10" max="200" value="70" class="slider" id="sensitivity">
+          <label for="html">sensitivity</label><br>
+        </div>
+        <!--------------------------------MENU--------------------------------------------------------->
+        <div class="menu ui">
+          <button class="menu-item">home</button>
+          <button class="menu-item">about</button>
+          <button class="menu-item">skills</button>
+          <button class="menu-item">contact me</button>
+        </div>
+        <!---------------------------CONTENT WHEEL----------------------------------------------------->
+        <div id="wheel">
+          <div id="content-0" class="content">
+            <div class="tags circle">Hi!</div>
+            <div class="tags circle">I'm Omar!</div>
+            <div class="tags circle">Scroll for more!</div>
+          </div>
+          <div id="content-1" class="content">
+            <div class="tags">b. 1999</div>  
+            <div class="tags">rabat/dubai</div>
+            <div class="tags">nyu'22</div>
+            <div class="tags">developer</div>
+          </div>
+          <!-- LABELS -->
+          <div>
+            <div class="label">FRONTEND</div>
+            <div class="label">BACKEND</div>
+            <div class="label">DATA</div>
+          </div>
+          <div id="content-2" class="content">
+            <!-- SKILLS -->
+            <div class="tags">html</div>
+            <div class="tags">css</div>
+            <div class="tags">bootstrap</div>
+            <div class="tags">javascript</div>
+            <div class="tags">c</div>
+            <div class="tags">c++</div>
+            <div class="tags">nodejs</div>
+            <div class="tags">flask</div>
+            <div class="tags">python</div>
+            <div class="tags">sql</div>
+            <div class="tags">r</div>
+            <div class="tags">stata</div>
+          </div>
+          <div id="content-3" class="content">
+            <div class="tags"><a href="https://github.com/soablackwhite" target="_blank" rel="noreferrer nofollow"><img src="../static/media/icons/github.svg"></a></div>
+            <div class="tags"><a href="https://www.linkedin.com/in/omarouldali/" target="_blank" rel="noreferrer nofollow"><img src="../static/media/icons/linkedin.svg"></a></div>
+            <div class="tags"><a href="https://twitter.com/noiseOmie" target="_blank"><img src="../static/media/icons/twitter.svg"></a></div>
+            <div class="tags"><a href="mailto:omar.ould.ali@nyu.edu" target="_blank"><img src="../static/media/icons/email.svg"></a></div>
+          </div>
+      </div>
+      <div id="about">
+        <p></p>
+      </div>
+    </section>
+
+      <!-- GALLERY -->
+      <!-- <div class="gallery" data-aos="fade-up"> -->
+      <!-- <section id="projects" data-aos="fade-up"> -->
+        <!-- <div class="container-lg">
+          <h1> Projects </h1>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <img src="../static/media/thumbnails/comic1c.png">
+            <div  class="gallery-item-overlay" class="container">
+              <h3> Comic </h3>
+              <p>Web Project: HTML, CSS, JS</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <video autoplay="autoplay" muted loop preload="metadata" onmouseover="this.pause()" onmouseout="this.play()"; class="thumbnail" style="float:right; right:0rem; width:100%; height:100%">
+              <source src="../static/media/animated/gemstone.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gallery-item-overlay" class="container">
+              <h3> Gemstone</h3>
+              <p>Game: GMS2, GLSL</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <video autoplay="autoplay" muted loop preload="metadata" onmouseover="this.pause()" onmouseout="this.play()"; class="thumbnail" style="float:right; right:0rem; width:100%; height:100%">
+              <source src="../static/media/animated/rps.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gallery-item-overlay" class="container">
+              <h3>ML Rock Paper Scissors</h3>
+              <p>Web Project: ml5.js, p5.js, Teachable Machine</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <img src="../static/media/animated/mistborn.gif" style="height:65%; top:17%;position: absolute;">
+            <div class="gallery-item-overlay" class="container">
+              <h3>Mistborn</h3>
+              <p>Game: Processing, Java</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <img src="../static/media/animated/neonTunnel.gif" style="width:110%; height:110%; bottom:0.1rem; position: absolute;">
+            <div class="gallery-item-overlay" class="container">
+              <h3>OFx Tunnel Maker</h3>
+              <p>Generative Art: C++, openFrameworks</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <video autoplay="autoplay" muted loop preload="metadata" onmouseover="this.pause()" onmouseout="this.play()"; class="thumbnail" style="float:right; right:0rem; width:100%; height:100%">
+              <source src="../static/media/animated/art.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gallery-item-overlay" class="container">
+              <h3>Unity Gallery</h3>
+              <p>Generative Art: Unity, C#, GLSL</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <video autoplay="autoplay" muted loop preload="metadata" onmouseover="this.pause()" onmouseout="this.play()"; class="thumbnail" style="float:right; right:0rem; width:100%; height:100%">
+              <source src="../static/media/animated/postcARds.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gallery-item-overlay" class="container">
+              <h3>postcARds</h3>
+              <p>AR App: Unity, C#</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <img src="../static/media/thumbnails/madsocks.png">
+            <div class="gallery-item-overlay" class="container">
+              <h3>Mad Socks</h3>
+              <p>Game: Unity, C#</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <img src="../static/media/animated/osgif.webp">
+            <div class="gallery-item-overlay" class="container">
+              <h3>OS GIFs</h3>
+              <p>Generative Art: p5.js, OpenFrameworks, Processing</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <video autoplay="autoplay" muted loop preload="metadata" onmouseover="this.pause()" onmouseout="this.play()"; class="thumbnail" style="float:right; right:0rem; width:100%; height:100%">
+              <source src="../static/media/animated/genuary.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gallery-item-overlay" class="container">
+              <h3>Reccie</h3>
+              <p>Recommendation system: p5.js, OpenFrameworks, Processing</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <video autoplay="autoplay" muted loop preload="metadata" onmouseover="this.pause()" onmouseout="this.play()"; class="thumbnail" style="float:right; right:0rem; width:100%; height:100%">
+              <source src="../static/media/animated/cube.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gallery-item-overlay" class="container">
+              <h3>NYU Algorave</h3>
+              <p>Live Coding: Hydra, Javascript, GLSL, TidalCycles</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="gallery-item" class="container">
+            <img src="../static/media/thumbnails/switch.png">
+            <div class="gallery-item-overlay" class="container">
+              <h3>Switch</h3>
+              <p>Game: GMS2</p>
+            </div>
+          </div>
+        </div> -->
+      <!-- </section> -->
+    </div>
+  </body>
+  <script>AOS.init();</script>
+  <script src="../static/scripts/functions.js"></script>
+  <script src="../static/scripts/script.js"></script>
+  <script src="../static/scripts/scroll.js"></script>
+  <script src="../static/scripts/sketch.js"></script>
+</html>

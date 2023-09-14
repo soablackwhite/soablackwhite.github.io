@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg157"
+   sodipodi:docname="stata.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview159"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.295"
+     inkscape:cx="401.69492"
+     inkscape:cy="400"
+     inkscape:window-width="1440"
+     inkscape:window-height="900"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg157" />
+  <defs
+     id="defs137">
+    <linearGradient
+       id="a"
+       x1="16"
+       y1="2"
+       x2="16"
+       y2="30"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#8aa7c0"
+         id="stop132"
+         style="stop-color:#808080;stop-opacity:1;" />
+      <stop
+         offset="1"
+         stop-color="#3c6e8f"
+         id="stop134"
+         style="stop-color:#121212;stop-opacity:1;" />
+    </linearGradient>
+  </defs>
+  <title
+     id="title139">file_type_stata</title>
+  <rect
+     x="2"
+     y="2"
+     width="28"
+     height="28"
+     rx="1.556"
+     ry="1.556"
+     style="fill:url(#a)"
+     id="rect141" />
+  <rect
+     x="13.171"
+     y="6.015"
+     width="5.756"
+     height="5.756"
+     style="fill:#fff"
+     id="rect143" />
+  <rect
+     x="20.326"
+     y="6.015"
+     width="5.756"
+     height="5.756"
+     style="fill:#fff"
+     id="rect145" />
+  <rect
+     x="20.326"
+     y="13.171"
+     width="5.756"
+     height="5.756"
+     style="fill:#fff"
+     id="rect147" />
+  <rect
+     x="13.171"
+     y="13.171"
+     width="5.756"
+     height="5.756"
+     style="fill:#fff"
+     id="rect149" />
+  <rect
+     x="6.015"
+     y="13.171"
+     width="5.756"
+     height="5.756"
+     style="fill:#fff"
+     id="rect151" />
+  <rect
+     x="6.015"
+     y="20.326"
+     width="5.756"
+     height="5.756"
+     style="fill:#fff"
+     id="rect153" />
+  <rect
+     x="13.171"
+     y="20.326"
+     width="5.756"
+     height="5.756"
+     style="fill:#fff"
+     id="rect155" />
+</svg>

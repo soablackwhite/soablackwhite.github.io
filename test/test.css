@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    overflow-y: scroll;
+}
+
+.container {
+    height: 2000px;
+    position: fixed;
+    display: block;
+}
+
+.about-section {
+    position: fixed;
+    display: block;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    position: fixed;
+    display: block;
+    white-space: nowrap;
+    color: black;
+}

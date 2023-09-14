@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scrollable Div with Resistance and Event Trigger</title>
+  <style>
+    .scrollable-div {
+      height: 300px;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .scrollable-div::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .scrollable-div::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="scrollable-div">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor metus eget neque pellentesque, a tincidunt quam dignissim. Proin quis erat euismod, aliquet lacus sit amet, gravida enim. Quisque placerat urna turpis, vitae feugiat quam tincidunt vel. Maecenas dignissim mauris in felis suscipit lobortis. Nullam congue massa vitae urna blandit blandit. Etiam ultricies in sem at feugiat. Maecenas id purus sed nibh congue aliquam. Fusce tincidunt felis nec nisl commodo, ac elementum urna consectetur. Donec ac feugiat orci, eget aliquam lacus. Donec tempor lobortis nulla in ultrices. Aliquam ullamcorper ligula vel velit aliquam, sit amet bibendum augue faucibus. Praesent vitae felis lectus. Nunc elementum at nisi sit amet scelerisque.</p>
+    <p>Nam sollicitudin enim a dui lacinia tempus. Fusce ornare orci enim, eget bibendum tellus suscipit eu. Nullam scelerisque risus eget risus vestibulum, vel pellentesque magna bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent consectetur auctor justo eu suscipit. Donec ornare non odio non tincidunt. Sed ac quam at nulla gravida hendrerit. Maecenas auctor, turpis eget consequat consequat, odio lacus venenatis magna, non sagittis odio sapien sed urna. Nullam id metus arcu. Nulla facilisi. Aliquam erat volutpat. Donec eget volutpat turpis. Fusce facilisis lorem et urna eleifend gravida. Sed ultricies felis ac turpis sagittis lacinia.</p>
+    <p>Maecenas eget nisl in turpis suscipit eleifend. Aenean consectetur ut nulla nec blandit. Etiam at urna vel mi eleifend dapibus vel ut sapien. Suspendisse non tincidunt lorem. Integer dictum odio sapien, ut gravida metus maximus id. Ut lacinia eleifend diam vel euismod. Duis vestibulum, turpis quis auctor finibus, est ipsum aliquam ex, sed hendrerit nulla justo quis lorem. Fusce condimentum, mauris a consectetur tincidunt, quam erat maximus sapien, quis euismod massa felis eu elit. Aenean eleifend, odio sit amet posuere euismod, lorem velit laoreet orci, eget scelerisque sapien risus vitae arcu. Fusce euismod nulla eu est consequat convallis. Nulla lacinia metus ac quam accumsan malesuada. In vel turpis eu enim consequat malesuada sed at dui. Nunc non est non lorem placerat sodales vel a felis. Duis convallis nisi in velit efficitur, vitae ultricies velit interdum. Nunc non lectus bibendum, dictum neque a, consectetur libero. Nullam rhoncus, nulla eu fringilla iaculis, metus est semper elit, eu tristique elit elit vel velit. In viverra blandit eros. Sed lacinia odio velit, vel bibendum tellus vulputate sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi nec est sed odio consectetur tristique. Fusce congue velit sed mauris eleifend, quis interdum libero pellentesque. Sed lacinia, elit vel finibus venenatis, turpis velit vehicula diam, sed commodo lorem leo sed sapien. Proin cursus, magna quis dictum faucibus, tellus metus rhoncus magna, eu accumsan eros massa a ex.</p>
+</div>
+<script>
+  const scrollableDiv = document.querySelector('.scrollable-div');
+  let previousScrollTop = scrollableDiv.scrollTop;
+
+  scrollableDiv.addEventListener('scroll', function() {
+    // calculate the difference in scrollTop between the previous and current scroll events
+    const scrollTopDiff = scrollableDiv.scrollTop - previousScrollTop;
+
+    // apply resistance by dividing the scrollTopDiff by a factor
+    const resistanceFactor = 2;
+    const resistanceScrollTopDiff = scrollTopDiff / resistanceFactor;
+
+    // update the scrollTop of the scrollable div with the resistance applied
+    scrollableDiv.scrollTop += resistanceScrollTopDiff;
+
+    // trigger event "a" when the scrollable div reaches a certain amount of scroll
+    const triggerScroll = 200; // adjust this value as desired
+    if (scrollableDiv.scrollTop >= triggerScroll) {
+      // trigger event "a"
+      console.log('Event "a" triggered!');
+    }
+
+    // update the previous scrollTop
+    previousScrollTop = scrollableDiv.scrollTop;
+  });
+</script>
+</body>
+</html>
+
